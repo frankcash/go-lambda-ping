@@ -21,3 +21,4 @@ function/main
 *.zip
 
 *.tfstate
+*.backup

@@ -2,7 +2,6 @@ provider "aws" {
     region = "us-east-1"
 }
 
-
 resource "aws_iam_role" "lambda_exec_role" {
   name = "lambda_exec_role"
   assume_role_policy = <<EOF
@@ -30,4 +29,3 @@ resource "aws_lambda_function" "demo_lambda" {
     source_code_hash = "${base64sha256(file("./function/function.zip"))}"
     role = "${aws_iam_role.lambda_exec_role.arn}"
 }
-
