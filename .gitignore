@@ -12,3 +12,12 @@
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
+
+.DS_Store
+.terraform
+
+# Ignore binary and zip file that we build
+function/main
+*.zip
+
+*.tfstate
