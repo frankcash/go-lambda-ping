@@ -2,6 +2,10 @@
 
 A simple program that will build the infrastructure to ping a website.
 
+## Configuring the Site
+
+Change `url := "http://example.com/"` to `url := "<desired-site>"` in `function/function.go`.
+
 ## Building the Zip
 
 In the `function` directory run `make release` to generate the binary and then zip it.
