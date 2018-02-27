@@ -2,6 +2,14 @@
 
 A simple program that will build the infrastructure to ping a website.
 
+## Gathering Dependencies
+
+`go get github.com/aws/aws-lambda-go/lambda`
+
+### Configuration
+
+The Go program exists inside of `function/`.  `main.tf` is the Terraform configuration for the Lambda.
+
 ## Configuring the Site
 
 Change `url := "http://example.com/"` to `url := "<desired-site>"` in `function/function.go`.
