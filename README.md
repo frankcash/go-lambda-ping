@@ -12,7 +12,7 @@ The Go program exists inside of `function/`.  `main.tf` is the Terraform configu
 
 ## Configuring the Site
 
-Change `url := "http://example.com/"` to `url := "<desired-site>"` in `function/function.go`.
+Change `url = "http://example.com/"` to `url = "<desired-site>"` in `terraform.tfvars`.
 
 ## Building the Zip
 
