@@ -4,7 +4,7 @@ A simple program that will build the infrastructure to ping a website.
 
 ## Configuring the Site
 
-Change `url := "http://example.com/"` to `url := "<desired-site>"` in `function/function.go`.
+Change `url = "http://example.com/"` to `url = "<desired-site>"` in `terraform.tfvars`.
 
 ## Building the Zip
 

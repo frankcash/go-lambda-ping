@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"fmt"
 	"net/http"
 
@@ -8,7 +9,7 @@ import (
 )
 
 func ping() (string, error) {
-	url := "http://example.com/"
+	url := os.Getenv("URL")
 	resp, err := http.Get(url)
 	return fmt.Sprintf("%s returned %s", url, resp.Status), err
 }
