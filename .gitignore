@@ -22,3 +22,5 @@ function/main
 
 *.tfstate
 *.backup
+
+vendor/
